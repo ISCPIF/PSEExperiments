@@ -1,6 +1,3 @@
-TODO: télécharger la dernière version d'openmole (exec et source)
-
-
 # PSEExperiments
 
 This git repository contains the necessary files to reproduce the experiments presented in the paper "Beyond corroboration: strengthening model validation by looking for unexpected patterns." submitted to PLOS ONE by Guillaume Chérel, Romain Reuillon and Clémentine Cottineau.
