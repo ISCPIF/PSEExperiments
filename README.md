@@ -9,9 +9,13 @@ The final section of this paper gives directions on how to use the PSE method di
 ## Quickstart
 
 To run the experiment with PSE and the model flocking:
+
 1. Clone this repository 
+
 2. Make sure you have access to the biomed V.O. or modify the scripts you want to run to use other environments.
+
 3. Start OpenMOLE in console mode with the jar and script files corresponding to the experiment you want to run and its associated model `openmole/openmole -c -p flockingbehaviour_2.11-0.2-SNAPSHOT.jar`
+
 4. At the OpenMOLE prompt, type `:load openmolescripts/flocking/pse/flockingRepli.scala`
 
 **Important:** To interrupt the distributed computation, you must do so explicitly before quitting OpenMOLE. If you don't, you will loose access to them. To quit the computation, run `ex.cancel` at the OpenMOLE prompt if you are running the MARIUS experiment script, and call `executions.foreach(_.cancel)` for any of the flocking experiment script.
