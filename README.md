@@ -51,7 +51,7 @@ openmole/openmole -c -s path_to_the_experiment_script.scala -p path_to_the_model
 The scripts are design to run the simulations on the [EGI grid](egi.eu) with the virtual organisation (V.O.) [biomed](http://lsgc.org/en/Biomed:home).
 If you don't have access the V.O., please make sure to first get an access or modify the script to use a different environment. Please refer to the [OpenMOLE documentation](http://www.openmole.org/current/documentation_console_environment.html) for detailed instructions on how to deploy your simulation on other computing environment. However, note that these experiments required several days or weeks to run on the grid, and will probably take a prohibitively long time on less powerful computing environments.
 
-To interrupt the distributed computation, you must do so explicitly before quitting OpenMOLE. If you don't, you will loose control over them. To quit the computation, run `ex.cancel` at the OpenMOLE prompt if you are running the MARIUS experiment script, and call `executions.foreach(_.cancel)` for any of the flocking experiment script.
+To interrupt the distributed computation, you must do so explicitly before quitting OpenMOLE. If you don't, you will loose control over them. To quit the computation, you must call the `cancel` method of all the objects responsible for running the distant computations. In the MARIUS script, the only such object is `ex` (run `ex.cancel` at the OpenMOLE). In all the flocking scripts, the variable executions is a list of such objects. Call `executions.foreach(_.cancel)` if you are running any of the flocking scripts.
 
 ## MGO
 
