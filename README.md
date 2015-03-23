@@ -25,10 +25,10 @@ To run the experiment with PSE and the model flocking:
 In order to run the experiments scripts, you will need to use [OpenMOLE](http://www.openmole.org). OpenMOLE is a software under active development, and as versions progresses the scripts in this repository can become obsolete. For this reason, this repository includes a frozen version of the software as of the time of the experiments. The directory `openmole` contains the executable software, and `openmole-src` contains the associated source code. Scala developpers willing to rebuild openmole from this source should follow these steps:
 
 ```
-cd libraries
-sbt install
-cd ../openmole
-sbt assemble
+$ cd libraries
+$ sbt install
+$ cd ../openmole
+$ sbt assemble
 ```
 
 Please note that for any use of OpenMOLE other than reproducing these experiments, it is advised to use the current version of OpenMOLE on the [official website](http://www.openmole.org).
@@ -45,7 +45,7 @@ The folder `openmolescripts/` and its subfolders contains the scripts to run eac
 
 To rerun an experiment, type from the root directory:
 ```
-openmole/openmole -c -s path_to_the_experiment_script.scala -p path_to_the_modeljar.jar 
+$ openmole/openmole -c -s path_to_the_experiment_script.scala -p path_to_the_modeljar.jar 
 ```
 
 The scripts are design to run the simulations on the [EGI grid](egi.eu) with the virtual organisation (V.O.) [biomed](http://lsgc.org/en/Biomed:home).
