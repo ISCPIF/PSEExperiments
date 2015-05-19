@@ -1,6 +1,6 @@
 # PSEExperiments
 
-This git repository contains the necessary files to reproduce the experiments presented in the paper "Beyond corroboration: strengthening model validation by looking for unexpected patterns." submitted to PLOS ONE by Guillaume Chérel, Romain Reuillon and Clémentine Cottineau.
+This git repository contains the necessary files to reproduce the experiments presented in the paper "Beyond corroboration: strengthening model validation by looking for unexpected patterns." submitted to PLOS ONE by Guillaume Chérel, Clémentine Cottineau and Romain Reuillon.
 
 In the experiments, we use the OpenMOLE software to run the exploration methods on the models flocking and MARIUS, and run the simulations on the EGI grid. The this document gives the directions to reproduce the experiments.
 
